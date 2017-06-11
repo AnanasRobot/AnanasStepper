@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <title>AnanasStepper - Open Source CAN Bus Based Servo Stepper for Multi Axis Gang Control</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+
+  <body data-spy="scroll">
+
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- ******HEADER****** -->
+    <header id="header" class="header">
+      <div class="container">
+        <h1 class="logo pull-left">
+          <a class="scrollto" href="#promo">
+            <span class="logo-title">AnanasStepper</span>
+          </a>
+        </h1><!--//logo-->
+        <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button><!--//nav-toggle-->
+          </div><!--//navbar-header-->
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+              <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
+              <li class="nav-item"><a class="scrollto" href="#get">Get
+                  One</a></li>
+              <li class="nav-item"><a class="scrollto" href="#updates">Get Updates</a></li>
+              <li class="nav-item"><a class="scrollto" href="#license">License</a></li>
+              <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+            </ul><!--//nav-->
+          </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+      </div>
+    </header><!--//header-->
+         <div class="bg-slider-wrapper">
+            <div id="bg-slider" class="flexslider bg-slider">
+                <ul class="slides">
+                    <li class="slide slide-1"></li>
+                    <li class="slide slide-2"></li>
+                    <li class="slide slide-3"></li>
+                </ul>
+            </div>
+        </div><!--//bg-slider-wrapper-->    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+      <div class="container text-center">
+        <h2 class="title"><span class="highlight">Ananas</span>Stepper</h2>
+        <p class="intro">Open Source CAN Bus Based Servo Stepper for Multi Axis Gang Control</p>
+        <ul class="meta list-inline">
+          <li>A project by <a href="https://hackaday.io/project/20980-ananasstepper-20" target="_blank">Gray Pillow</a></li>
+          <li><a href="https://github.com/Dark-Guan" target="_blank">View on GitHub</a></li>
+        </ul><!--//meta-->
+        <br><br><br>
+      </div><!--//container-->
+      <div class="social-media">
+        <div class="social-media-inner container text-center">
+          <ul class="list-inline">
+            <li class="twitter-tweet">
+              <a href="https://twitter.com/share"
+                 class="twitter-share-button" data-via="cantactio">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li><!--//twitter-tweet-->
+            <li class="github-follow"><iframe
+                                         src="http://ghbtns.com/github-btn.html?user=Dark-Guan&type=follow&count=false"
+                                         allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+          </ul>
+        </div>
+      </div>
+    </section><!--//promo-->
+
+    <!-- ******ABOUT****** -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="title text-center">About AnanasStepper</h2>
+        <p class="intro text-center">This is a part of a smart Robot control system(AnanasRobot),
+        based on  Stepper Motor and CAN bus.
+        This project aims to build a motion control system
+        including hardware and software to make Multi-Axis Gang Control easy and precise, 
+        applied to 3D printer, a 6+ axis robot arm or some more complex motion control system.</p>
+        <div class="row">
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-expand"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Highly Expandable</h3>
+              <p>With two twisted wire and power to connect all device together.</p>
+            </div><!--//content-->
+          </div><!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-money"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Low Cost</h3>
+              <p>AnanasStepper is a low cost device, and allows you to use
+                cheap cabling to interface with various connectors.</p>
+            </div><!--//content-->
+          </div><!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-github"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Open Source</h3>
+              <p>A truely open source hardware project. All design
+                files are available under a permissive license</p>
+            </div><!--//content-->
+          </div><!--//item-->
+          <div class="clearfix visible-md"></div>
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-laptop"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Cross Platform</h3>
+              <p>Works on Mac, Linux, and Windows</p>
+            </div><!--//content-->
+          </div><!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-code"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Designed for Maker</h3>
+              <p>Easily scriptable using an open-source
+                Python library.</p>
+            </div><!--//content-->
+          </div><!--//item-->
+          <div class="item col-md-4 col-sm-6 col-xs-12">
+            <div class="icon-holder">
+              <i class="fa fa-support"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Support</h3>
+              <p>Community and commercial support available.</p>
+            </div><!--//content-->
+          </div><!--//item-->
+        </div><!--//row-->
+      </div><!--//container-->
+    </section><!--//about-->
+
+    <!-- ******get****** -->
+    <section id="get" class="get section">
+      <div class="container text-center">
+        <h2 class="title">Get One</h2>
+        <div class="col-md-4 col-md-offset-4">
+          <h4 class="title" style="margin-bottom:0;">AnanasStepper v2.0</h3>
+<iframe class="shopify-widget" frameborder="0" scrolling="no" src="https://hackaday.io/project/20980-ananasstepper-20" width="240" height="330"></iframe>
+          <br>
+          Or checkout the
+          <a href="https://github.com/Dark-Guan/AnanasStepper2.0-hardware" target="_blank">
+            hardware repository</a> and build your own.</p>
+</div>
+</div><!--//container-->
+</section><!--//get-->
+
+<section id="updates" class="updates section">
+  <div class="container text-center">
+      <h3 class="title">Sign Up for Updates</h3>
+    <div class="col-md-4 col-md-offset-4">
+    <!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//facebook.us16.list-manage.com/subscribe/post?u=c9d8c6a7cfe281180e87cf9ad&amp;id=8fd8fd346a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c9d8c6a7cfe281180e87cf9ad_8fd8fd346a" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+  </div>
+</section>
+
+<!-- ******LICENSE****** -->
+<section id="license" class="license section">
+  <div class="container">
+    <div class="license-inner">
+      <h2 class="title text-center">License</h2>
+      <div class="info">
+        <p>AnanasStepper is released under licenses that comply with the
+          <a href="http://www.oshwa.org/definition/" target="_blank">
+            Open Source Hardware Definition</a></p>
+        <p>Hardware design is released under the <a
+                                                    href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                    target="_blank">Attribution-ShareAlike 4.0 International</a>
+          license.</p>
+        <p>Firmware is released under the <a
+                                             href="http://opensource.org/licenses/MIT" target="_blank">
+            MIT License</a>.</p>
+      </div><!--//info-->
+    </div><!--//btn-container-->
+  </div><!--//cta-container-->
+</div><!--//license-inner-->
+</div><!--//container-->
+</section><!--//how-->
+
+<!-- ******CONTACT****** -->
+<section id="contact" class="contact section has-pattern">
+  <div class="container">
+    <div class="contact-inner">
+      <h2 class="title  text-center">Contact</h2>
+      <p class="intro  text-center">Feel free to get in touch if you have any questions or suggestions.</p>
+      <div class="author-message">
+        <div class="profile">
+          <img class="img-responsive"
+               src="assets/images/29352797.png" alt="" />
+        </div><!--//profile-->
+        <div class="speech-bubble">
+          <h3 class="sub-title">About Me</h3>
+          <p>I am a Mechatronics Engineers,Good at pragramming with Python Java and C++.
+          And I am working on Ananas now, which is a smart robot contorl system </p>
+          <p>I also offer consulting services and training on
+            Controller Area Network and CANtact</p>
+          <p>If you'd like to work with me on a project, please
+            get in touch.</p>
+          <div class="source">
+            <span class="name"><a
+                                  href="https://github.com/Dark-Guan" target="_blank">
+                --Dark Guan</a></span>
+          </div><!--//source-->
+        </div><!--//speech-bubble-->
+      </div><!--//author-message-->
+      <div class="clearfix"></div>
+      <div class="info text-center">
+        <h4 class="sub-title">Say Hi</h4>
+        <ul class="social-icons list-inline">
+          <li><a href="https://twitter.com/DarkGuan" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/dark-guan-427a616b/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/tianhe.guan"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCn2R4PoriUQKwyFbtdgtRnQ"><i class="fa fa-youtube"></i></a></li>
+          <li class="last"><a href="mailto:tickel.guan@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </div><!--//info-->
+    </div><!--//contact-inner-->
+  </div><!--//container-->
+</section><!--//contact-->
+
+<!-- ******FOOTER****** -->
+<footer class="footer">
+  <div class="container text-center">
+    <small class="copyright">A project by <a
+                                             href="https://github.com/Dark-Guan">Dark-Guan</a> - Theme by
+      <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a></small>
+  </div><!--//container-->
+</footer><!--//footer-->
+
+<!-- Javascript -->
+<script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100852939-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
