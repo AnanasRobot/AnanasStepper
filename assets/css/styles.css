@@ -35,6 +35,12 @@ a:hover {
   text-decoration: underline;
   color: #0e98c5;
 }
+a:active {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
 .btn,
 a.btn {
   -webkit-transition: all 0.4s ease-in-out;
@@ -61,6 +67,10 @@ a.btn-cta-primary,
   font-weight: 600;
   text-transform: uppercase;
 }
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
 a.btn-cta-primary:hover,
 .btn-cta-primary:hover {
   background: #053c4e;
@@ -115,6 +125,8 @@ pre code {
   margin: 0;
   font-size: 26px;
   padding-top: 10px;
+  display: inline-block;
+  float: left;
 }
 .header .logo a {
   color: #fff;
@@ -178,6 +190,71 @@ pre code {
 }
 .header .main-nav .nav .nav-item.last {
   margin-right: 0;
+}
+/* ======= Hero Section ======= */
+.hero-section {
+  min-height: 560px;
+  background: #494d55;
+  position: relative;
+}
+.hero-section .figure-holder-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-section .figure-holder {
+  position: relative;
+  height: 560px;
+}
+.hero-section .figure-holder .figure-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.hero-carousel {
+  height: 560px;
+  color: #fff;
+}
+.hero-carousel .carousel-inner .item {
+  height: 560px;
+  background-position: center center;
+}
+.hero-carousel .carousel-inner .item-1 {
+  background-image: url('../images/photo-2.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .item-2 {
+  background-image: url('../images/photo-3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .item-3 {
+  background-image: url('../images/photo-1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .heading {
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.hero-carousel .carousel-inner .intro {
+  font-size: 18px;
+}
+.hero-carousel .carousel-inner .intro + .btn {
+  margin-top: 15px;
 }
 /* ======= Promo Section ======= */
 .promo {
